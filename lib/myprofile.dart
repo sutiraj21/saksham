@@ -10,7 +10,7 @@ class Profile_Widget extends StatelessWidget {
         appBar: AppBar(
 
           title: Padding(
-            padding: const EdgeInsets.only(top: 20.0),
+            padding: const EdgeInsets.only(top: 10.0),
             child: Center(child: Text("My Profile",style: TextStyle(
               color: Colors.blue,
 
@@ -38,7 +38,7 @@ class Profile_Widget extends StatelessWidget {
                 decoration:  BoxDecoration(
 
                   color: Colors.blueGrey,
-                  borderRadius: BorderRadius.circular(50),
+                  borderRadius: BorderRadius.circular(60),
                 ),
               ),
               Padding(
@@ -112,8 +112,10 @@ class Profile_Widget extends StatelessWidget {
               ElevatedButton(onPressed: (){
 
               },child: Text("submit",style: TextStyle(
-                color: Colors.blue,
+                color: Colors.white,
               ),
+              ),style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueAccent
               ),
               )
             ],
