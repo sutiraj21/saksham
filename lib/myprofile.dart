@@ -10,11 +10,12 @@ class Profile_Widget extends StatelessWidget {
         appBar: AppBar(
 
           title: Padding(
-            padding: const EdgeInsets.only(top: 10.0),
+            padding: const EdgeInsets.only(top: 20.0),
             child: Center(child: Text("My Profile",style: TextStyle(
-              color: Colors.blue,
+              color: Colors.blueAccent,
+              fontWeight: FontWeight.bold,
 
-            ),),widthFactor: 40,),
+            ),),widthFactor: 50,),
           ),
 
           backgroundColor: Colors.white,
@@ -35,21 +36,34 @@ class Profile_Widget extends StatelessWidget {
                 width: 100,
 
                 alignment: Alignment.topRight,
-                decoration:  BoxDecoration(
-
-                  color: Colors.blueGrey,
-                  borderRadius: BorderRadius.circular(60),
-                ),
+                // decoration:  BoxDecoration(
+                //
+                //   color: Colors.blueGrey,
+                //   borderRadius: BorderRadius.circular(50),
+                // ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      labelText: "First Name",
+                      hintText: "First Name",hintStyle: TextStyle(
+                    color: Colors.blueAccent,
+                  ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blueAccent,
+                        width: 2.0,
 
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12.0)
                       )
+                    ),focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blueAccent,
+                      width: 2.0,
+
+                    )
+                  )
+
+
                   ),
                 ),
               ),
@@ -58,11 +72,21 @@ class Profile_Widget extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration:InputDecoration(
-                      labelText: " Email address *",
-
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12.0),
+                      labelText: " Email address *",hintStyle: TextStyle(
+                    color: Colors.blueAccent,
+                  ),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blueAccent,
+                          width: 2.0,
+                        )
+                    ),focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blueAccent,
+                        width: 2.0,
                       )
+                  )
+
                   ),
                 ),
               ),
@@ -71,11 +95,21 @@ class Profile_Widget extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      labelText: "phone no ",
-
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12.0),
+                      labelText: "phone no ",hintStyle: TextStyle(
+                    color: Colors.blueAccent
+                  ),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blueAccent,
+                          width: 2.0,
+                        )
+                    ),focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blueAccent,
+                        width: 2.0,
                       )
+                  )
+
                   ),
                 ),
               ),
@@ -85,12 +119,20 @@ class Profile_Widget extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      labelText: "Date of birth ",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12.0),
-
-
-                      )
+                      labelText: "Date of birth ",hintStyle: TextStyle(
+                    color: Colors.blueAccent,
+                  ),
+                 enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                        color: Colors.blueAccent,
+                        width: 2.0,
+                )
+              ),focusedBorder: OutlineInputBorder(
+                 borderSide: BorderSide(
+                color: Colors.blueAccent,
+                 width: 2.0,
+    )
+                  )
                   ),
                 ),
               ),
@@ -99,12 +141,24 @@ class Profile_Widget extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      labelText: " Add a resume",
+                      labelText: " Add a resume",hintStyle: TextStyle(
+                    color: Colors.blueAccent,
+                  ),
                       suffixIcon: Icon(Icons.arrow_downward_rounded),
 
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12.0),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.blueAccent,
+                            width: 2.0,
+                          )
+                      ),focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.blueAccent,
+                        width: 2.0,
+
                       )
+                  )
+
                   ),
                 ),
               ),
@@ -115,8 +169,8 @@ class Profile_Widget extends StatelessWidget {
                 color: Colors.white,
               ),
               ),style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent
-              ),
+                backgroundColor: Colors.blueAccent,
+              )
               )
             ],
           ),
